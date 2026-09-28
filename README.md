@@ -8,6 +8,8 @@ A production-ready, enterprise-focused RAG (Retrieval-Augmented Generation) chat
 
 This project demonstrates how to build a scalable AI assistant that answers questions using internal enterprise documents rather than relying on general-purpose knowledge alone. The system indexes uploaded files, creates vector embeddings, retrieves the most relevant document chunks, and streams the answer back to the user in real time.
 
+A root-level `knowledge-base` folder is included as the default document corpus for testing and demoing the RAG flow. It contains sample company documents that can be uploaded and ingested into the vector store before asking questions against them.
+
 The design follows Clean Architecture principles so that application logic, persistence, and AI integration remain decoupled and testable. In this codebase, the domain layer is intentionally lightweight: it contains the core `DocumentChunk` entity, validation rules, and repository contracts, while the concrete data access and AI adapters live in the infrastructure layer.
 
 ## Why this architecture
@@ -83,20 +85,47 @@ This is implemented using `IAsyncEnumerable<string>` so the application can yiel
 ## Project structure
 
 ```text
-RagSystem/
-├── src/
-│   ├── RagSystem.Application/
-│   ├── RagSystem.Domain/
-│   ├── RagSystem.Infrastructure/
-│   ├── RagSystem.Presentation/
-│   └── RagSystem.Shared/
-├── tests/
-│   └── RagSystem.Tests/
-├── docker-compose.yml
-├── Dockerfile
-├── RagSystem.sln
-└── README.md
+.
+├── knowledge-base/
+│   ├── inova_tech_recruitment_policy.txt
+│   └── inova_tech_remote_work_policy.txt
+├── RagSystem/
+│   ├── src/
+│   │   ├── RagSystem.Application/
+│   │   ├── RagSystem.Domain/
+│   │   ├── RagSystem.Infrastructure/
+│   │   ├── RagSystem.Presentation/
+│   │   └── RagSystem.Shared/
+│   ├── tests/
+│   │   └── RagSystem.Tests/
+│   ├── docker-compose.yml
+│   ├── Dockerfile
+│   ├── RagSystem.sln
+│   └── README.md
+├── rag-frontend/
+├── README.md
+└── .gitignore
 ```
+
+## Knowledge base
+
+The `knowledge-base` folder holds the sample enterprise documents that are intended to be ingested by the RAG system. In this repository, the current content contains policy and operations documents such as:
+
+- `inova_tech_recruitment_policy.txt`
+- `inova_tech_remote_work_policy.txt`
+
+These files are useful for testing the document upload flow and validating that the chatbot answers questions using only the indexed content.
+
+### Ingesting documents
+
+Upload one of the files from `knowledge-base` to the rag API using the document ingestion endpoint:
+
+```bash
+curl -X POST "http://localhost:5000/api/v1/rag/documents" \
+  -F "file=@knowledge-base/inova_tech_recruitment_policy.txt"
+```
+
+You can repeat this process for additional documents or replace the sample files with your own internal knowledge base content.
 
 ## Getting started
 

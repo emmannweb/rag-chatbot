@@ -1,0 +1,41 @@
+# INOVA TECH ENTERPRISE REMOTE WORK AND FLEXIBLE HOURS POLICY
+Document Version: 3.1  
+Effective Date: February 1, 2026  
+Applies To: All Global Operations, People Operations, and Full-Time Employees  
+
+---
+
+## 1. PURPOSE AND OBJECTIVES
+Inova Tech Enterprise recognizes the evolving landscape of modern employment and the importance of work-life integration. The purpose of this policy is to establish clear guidelines for remote work, hybrid arrangements, and flexible working hours. Our goal is to empower professionals to optimize their productivity and well-being while maintaining seamless operational continuity, security standards, and high-caliber project delivery.
+
+---
+
+## 2. ELIGIBILITY AND WORK ARRANGEMENTS
+Work arrangements at Inova Tech are structured to balance individual flexibility with team collaboration. Employees may operate under one of the following designated frameworks:
+- **Fully Remote:** Employees approved to work permanently from a designated home office location outside of a physical Inova Tech corporate facility.
+- **Hybrid:** Employees who split their working time between a designated corporate office and a remote location, adhering to a minimum core office-presence schedule defined by departmental leads.
+- **Fully On-Site:** Roles that inherently require physical infrastructure, hardware access, or secure on-premise environments.
+
+Eligibility is determined by job function, security classification, performance history, and approval from the respective Department Head and Human Resources.
+
+---
+
+## 3. CORE WORKING HOURS AND AVAILABILITY
+To ensure cross-functional alignment and efficient global collaboration, Inova Tech establishes standard operational guidelines for daily communication:
+- **Core Collaboration Window:** All remote and hybrid employees must be reliably reachable via company-approved communication channels (e.g., Slack, Microsoft Teams, corporate email) during designated core hours, typically 10:00 AM to 3:00 PM local time.
+- **Flexible Bands:** Outside of core hours, employees may structure their remaining working hours flexibly, provided they fulfill their contracted weekly hour obligations and meet project deadlines.
+- **Time Zone Management:** For distributed teams spanning multiple global regions, communication expectations, asynchronous workflows, and meeting windows must be explicitly established and respected within team charters.
+
+---
+
+## 4. HOME OFFICE INFRASTRUCTURE AND SECURITY COMPLIANCE
+Maintaining corporate data integrity and cybersecurity is a shared priority across all Inova Tech operations:
+1. **Hardware and Software Standards:** Employees must conduct company business exclusively on authorized, secure corporate hardware equipped with mandated endpoint protection, full-disk encryption, and Virtual Private Network (VPN) software provided by IT.
+2. **Secure Environment:** Remote workers must maintain a private, secure workspace that safeguards confidential company data, proprietary research, and client information from unauthorized viewing or physical access.
+3. **Network Security:** Public Wi-Fi networks must not be utilized for company operations unless connected through the official corporate VPN. Home routers must be secured with modern encryption standards and updated firmware.
+
+---
+
+## 5. EXPENSE REIMBURSEMENT AND PERFORMANCE EVALUATION
+- **Remote Stipend:** Eligible remote and hybrid employees receive a standardized annual home office and utility stipend, subject to local tax regulations and expense submission guidelines managed by Finance.
+- **Performance Accountability:** Remote work performance is measured strictly by objective deliverables, milestones, and output metrics rather than physical presence. Regular check-ins between managers and team members ensure alignment, professional growth, and proactive support.
