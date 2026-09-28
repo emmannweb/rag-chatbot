@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "uUFqT6eDk1Y=",
+  "success": true,
+  "projectFilePath": "/home/emmann/Documents/dotnet project/rag-chatbot/RagSystem/src/RagSystem.Application/RagSystem.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/emmann/.nuget/packages/distributedlock.core/1.0.8/distributedlock.core.1.0.8.nupkg.sha512",
+    "/home/emmann/.nuget/packages/distributedlock.postgres/1.3.0/distributedlock.postgres.1.3.0.nupkg.sha512",
+    "/home/emmann/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.10/microsoft.extensions.dependencyinjection.abstractions.10.0.10.nupkg.sha512",
+    "/home/emmann/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/emmann/.nuget/packages/npgsql/8.0.6/npgsql.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

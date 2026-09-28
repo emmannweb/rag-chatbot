@@ -1,0 +1,48 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: postgresvector
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: ragdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_vector:/var/lib/postgresql/data
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ragsystem-web
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=ragdb;Username=postgres;Password=mysecretpassword
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "5156:80"
+    depends_on:
+      - db
+    networks:
+      - default
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@example.com
+      PGADMIN_DEFAULT_PASSWORD: adminpassword
+    ports:
+      - "8080:80"
+    volumes:
+      - ./pgvectoradmin_data:/var/lib/pgadmin
+    depends_on:
+      - db
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

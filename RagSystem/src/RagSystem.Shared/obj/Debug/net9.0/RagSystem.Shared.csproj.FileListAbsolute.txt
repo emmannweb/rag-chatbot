@@ -1,0 +1,11 @@
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/bin/Debug/net9.0/RagSystem.Shared.deps.json
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/bin/Debug/net9.0/RagSystem.Shared.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/bin/Debug/net9.0/RagSystem.Shared.pdb
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/RagSystem.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/RagSystem.Shared.AssemblyInfoInputs.cache
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/RagSystem.Shared.AssemblyInfo.cs
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/RagSystem.Shared.csproj.CoreCompileInputs.cache
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/RagSystem.Shared.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/refint/RagSystem.Shared.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/RagSystem.Shared.pdb
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Shared/obj/Debug/net9.0/ref/RagSystem.Shared.dll

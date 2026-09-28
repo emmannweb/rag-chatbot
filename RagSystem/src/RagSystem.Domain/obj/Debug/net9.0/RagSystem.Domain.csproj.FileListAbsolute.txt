@@ -1,0 +1,15 @@
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/bin/Debug/net9.0/RagSystem.Domain.deps.json
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/bin/Debug/net9.0/RagSystem.Domain.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/bin/Debug/net9.0/RagSystem.Domain.pdb
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/bin/Debug/net9.0/RagSystem.Shared.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/bin/Debug/net9.0/RagSystem.Shared.pdb
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.csproj.AssemblyReference.cache
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.AssemblyInfoInputs.cache
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.AssemblyInfo.cs
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.csproj.CoreCompileInputs.cache
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSyste.57E47E4F.Up2Date
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/refint/RagSystem.Domain.dll
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/RagSystem.Domain.pdb
+/home/emmann/Documents/dotnet project/RagSystem/src/RagSystem.Domain/obj/Debug/net9.0/ref/RagSystem.Domain.dll
