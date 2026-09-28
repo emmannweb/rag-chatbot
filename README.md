@@ -8,6 +8,10 @@ A production-ready, enterprise-focused RAG (Retrieval-Augmented Generation) chat
 
 This project demonstrates how to build a scalable AI assistant that answers questions using internal enterprise documents rather than relying on general-purpose knowledge alone. The system indexes uploaded files, creates vector embeddings, retrieves the most relevant document chunks, and streams the answer back to the user in real time.
 
+<p align="center">
+  <img src="./rag-frontend/demo/demo.gif" width="600" alt="RAG Chatbot Demo">
+</p>
+
 A root-level `knowledge-base` folder is included as the default document corpus for testing and demoing the RAG flow. It contains sample company documents that can be uploaded and ingested into the vector store before asking questions against them.
 
 The design follows Clean Architecture principles so that application logic, persistence, and AI integration remain decoupled and testable. In this codebase, the domain layer is intentionally lightweight: it contains the core `DocumentChunk` entity, validation rules, and repository contracts, while the concrete data access and AI adapters live in the infrastructure layer.
