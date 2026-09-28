@@ -118,14 +118,23 @@ These files are useful for testing the document upload flow and validating that 
 
 ### Ingesting documents
 
-Upload one of the files from `knowledge-base` to the rag API using the document ingestion endpoint:
+Upload one of the files from `knowledge-base` to the rag API using the document ingestion endpoint. The API is served on port `5156`, and the Swagger UI is available at `http://localhost:5156/api-docs`.
 
 ```bash
-curl -X POST "http://localhost:5000/api/v1/rag/documents" \
+curl -X POST "http://localhost:5156/api/v1/rag/documents" \
   -F "file=@knowledge-base/inova_tech_recruitment_policy.txt"
 ```
 
 You can repeat this process for additional documents or replace the sample files with your own internal knowledge base content.
+
+## Swagger / API documentation
+
+The ASP.NET Core project is configured to expose Swagger UI in development mode.
+
+- Swagger UI: `http://localhost:5156/api-docs`
+- OpenAPI JSON: `http://localhost:5156/openapi/v1.json`
+
+This is configured in the application startup and matches the local launch profile in [RagSystem/src/RagSystem.Presentation/Properties/launchSettings.json](RagSystem/src/RagSystem.Presentation/Properties/launchSettings.json).
 
 ## Getting started
 
