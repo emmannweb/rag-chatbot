@@ -8,7 +8,7 @@ A production-ready, enterprise-focused RAG (Retrieval-Augmented Generation) chat
 
 This project demonstrates how to build a scalable AI assistant that answers questions using internal enterprise documents rather than relying on general-purpose knowledge alone. The system indexes uploaded files, creates vector embeddings, retrieves the most relevant document chunks, and streams the answer back to the user in real time.
 
-The design follows Clean Architecture principles so that application logic, business rules, persistence, and AI integration remain decoupled and testable.
+The design follows Clean Architecture principles so that application logic, persistence, and AI integration remain decoupled and testable. In this codebase, the domain layer is intentionally lightweight: it contains the core `DocumentChunk` entity, validation rules, and repository contracts, while the concrete data access and AI adapters live in the infrastructure layer.
 
 ## Why this architecture
 
@@ -28,21 +28,30 @@ By combining modern streaming patterns with domain-driven design, the solution d
 flowchart LR
     A[React + Vite + Material UI] --> B[ASP.NET Core API]
     B --> C[Application Use Cases]
-    C --> D[Domain Logic]
-    C --> E[AI Provider / Ollama]
-    C --> F[PostgreSQL + pgvector Repository]
-    F --> G[Indexed document chunks]
-    E --> H[Streaming AI response]
-    B --> I[Real-time chunked UI output]
+    C --> D[Domain layer]
+    D --> E[DocumentChunk entity + repository contracts]
+
+    C --> F[Infrastructure layer]
+    F --> G[Pgvector repository / EF Core + PostgreSQL]
+    F --> H[Ollama AI provider]
+    G --> I[Indexed document chunks]
+    H --> J[Embedding generation + streaming completion]
+
+    H --> K[Streaming AI response]
+    K --> B
+    B --> L[Real-time chunked UI output]
+    L --> A
 ```
 
 ### Main layers
 
-- Presentation: REST API and web-layer orchestration
-- Application: Use cases and business workflows
-- Domain: Entities, domain rules, and repository contracts
-- Infrastructure: PostgreSQL persistence, vector search, AI provider adapters
-- Shared: common result models and cross-cutting abstractions
+- Presentation: ASP.NET Core controllers and HTTP streaming responses
+- Application: use cases such as document ingestion and chat orchestration
+- Domain: the `DocumentChunk` entity, validation logic, and repository abstractions (`IRagRepository`, `IAIProvider`)
+- Infrastructure: PostgreSQL with pgvector, EF Core persistence, and the Ollama AI adapter
+- Shared: common result and API response models
+
+> In this implementation, the domain layer is intentionally thin rather than a large business-logic layer; the real value is orchestrated by the application use cases and concretized in infrastructure adapters.
 
 ## Tech stack
 
